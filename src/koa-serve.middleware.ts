@@ -3,8 +3,7 @@ import type { Context,Middleware,Next } from 'koa';
 import send from 'koa-send';
 import fs from 'node:fs';
 import path from 'node:path';
-import { fileURLToPath } from 'node:url';
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
+// const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const debug = _debug('koa-serve');
 export default function (directories: string[],root: any): Middleware {
