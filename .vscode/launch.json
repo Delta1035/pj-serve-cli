@@ -16,7 +16,7 @@
             "type": "node-terminal",
             "name": "运行脚本: dev",
             "request": "launch",
-            "command": "pnpm run dev",
+            "command": "pnpm run dev example -p 4204",
             "cwd": "${workspaceFolder}"
         }
     ]
