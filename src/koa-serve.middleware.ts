@@ -34,12 +34,12 @@ export default function (directories: string[] | string,root: string): Middlewar
             debug(e);
             console.log('e >>>>>',e);
 
-            // if (isAsset) {
-            //     ctx.body = 'Not Found';
-            //     ctx.status = 404;
-            // } else {
-            //     return next();
-            // }
+            if (isAsset) {
+                ctx.body = 'File Not Found';
+                ctx.status = 404;
+            } else {
+                return next();
+            }
         }
     };
 };
